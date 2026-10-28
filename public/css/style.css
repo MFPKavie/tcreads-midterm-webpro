@@ -1,0 +1,36 @@
+body { max-width: 1000px; margin: 0 auto; padding: 20px; background: #f7f6f0; color: #26362f; font: 16px/1.5 Arial, sans-serif; }
+header, nav, .heading, .subheading, .actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+header, .form-card, .series-card, .stats > div { padding: 16px; background: #fffefa; border: 1px solid #e1e1d8; border-radius: 8px; }
+header { margin-bottom: 28px; }
+.brand, h1, h2, .title { color: #285443; font-family: Georgia, serif; }
+.brand, .title { font-weight: bold; text-decoration: none; }
+h1 { margin-bottom: 6px; }
+a { color: #285443; }
+button, .button { display: inline-block; padding: 9px 14px; border: 1px solid #285443; border-radius: 6px; background: white; color: #285443; cursor: pointer; text-decoration: none; }
+button.primary, .button.primary { background: #285443; color: white; }
+button.danger { border-color: #a6423c; color: #a6423c; }
+main { min-height: 75vh; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; }
+.stats > div { display: grid; }
+.stats strong { font: bold 24px Georgia, serif; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0; }
+input, select, textarea { max-width: 100%; padding: 9px; border: 1px solid #cfd4cc; border-radius: 5px; }
+.filters input { flex: 1; }
+.series-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.series-card { display: flex; gap: 16px; }
+.cover { display: grid; width: 90px; min-width: 90px; min-height: 130px; place-items: center; border-radius: 5px; background: #dce7dc; color: #285443; font: bold 42px Georgia, serif; text-decoration: none; }
+.series-info { flex: 1; }
+.series-info p { margin: 8px 0; }
+.tag { padding: 3px 8px; border-radius: 12px; background: #e8efe9; font-size: 13px; }
+progress { width: 100%; accent-color: #285443; }
+.actions { justify-content: flex-start; margin-top: 12px; }
+.form-card { max-width: 480px; margin: 30px auto; }
+.form-card.wide { max-width: 700px; }
+.form-card form { display: grid; gap: 12px; margin-top: 18px; }
+.form-card label { display: grid; gap: 5px; }
+.form-card input, .form-card select, .form-card textarea { width: 100%; }
+.message { padding: 12px; border-radius: 6px; background: #e8efe9; }
+.error { color: #a6423c; }
+.empty { padding: 38px; text-align: center; border: 1px dashed #aab8ab; border-radius: 8px; }
+footer { padding: 24px 0; color: #69756e; text-align: center; }
+@media (max-width: 650px) { .stats { grid-template-columns: repeat(2, 1fr); } .series-list { grid-template-columns: 1fr; } header { flex-wrap: wrap; } nav { order: 3; flex-basis: 100%; } }
